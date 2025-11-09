@@ -1,9 +1,9 @@
-const argsCount = Process.argv.length - 2;
+const argsCount = process.argv.slice(2);
 
-if(argsCount === 0){
+if (argsCount === 0) {
     console.log("No argument");
-} else if (argsCount === 1){
+} else if (argsCount === 1) {
     console.log("Argument found");
-}else{
+} else {
     console.log("Arguments found");
 }
